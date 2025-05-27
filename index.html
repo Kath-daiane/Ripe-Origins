@@ -6,99 +6,93 @@
   <title>Ripe Origins</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Cabeçalho -->
-  <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <!-- NAVBAR -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute w-100 z-3">
     <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="#">Ripe Origins</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fs-3 fw-bold text-white" href="#">Ripe Origins</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#hero">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Quem Somos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Fale Conosco</a></li>
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link text-white" href="#hero">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#sobre">Quem Somos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#produtos">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero d-flex align-items-center text-white text-center">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Onde cada mordida é uma fiesta!</h1>
-      <p class="lead">Experimente o exclusivo Quiche Loco e viva uma explosão de sabores.</p>
-      <a href="#produtos" class="btn btn-primary btn-lg mt-3">Ver Produtos</a>
+  <!-- HERO -->
+  <section id="hero" class="hero d-flex align-items-center justify-content-center text-white text-center">
+    <div class="container position-relative z-2">
+      <h1 class="display-3 fw-bold">Onde cada mordida é uma fiesta!</h1>
+      <p class="lead mt-3">Uma experiência gastronômica autêntica e moderna</p>
+      <a href="#produtos" class="btn btn-outline-light btn-lg mt-4">Conheça o Quiche Loco</a>
+    </div>
+    <div class="overlay"></div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">Quem Somos</h2>
+      <p class="lead w-75 mx-auto">Nascemos da paixão pela gastronomia mexicana. Unimos tradição e inovação para criar experiências sofisticadas em cada prato servido.</p>
     </div>
   </section>
 
-  <!-- Introdução -->
-  <section id="introducao" class="py-5 text-center">
-    <div class="container">
-      <h2 class="mb-4">Bem-vindo à Ripe Origins</h2>
-      <p class="lead">Comida mexicana com um toque moderno, servida em um ambiente 5 estrelas.</p>
-    </div>
-  </section>
-
-  <!-- Quem Somos -->
-  <section id="sobre" class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center">Quem Somos</h2>
-      <p>A Ripe Origins nasceu da paixão pela gastronomia mexicana. Com receitas autênticas e modernas, oferecemos uma experiência única aos nossos clientes.</p>
-    </div>
-  </section>
-
-  <!-- Produtos -->
-  <section id="produtos" class="py-5 text-center">
-    <div class="container">
-      <h2 class="mb-4">Nossos Produtos</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card shadow-sm">
+  <!-- PRODUTOS -->
+  <section id="produtos" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title mb-5">Destaques do Menu</h2>
+      <div class="row g-4">
+        <div class="col-md-6 mx-auto">
+          <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
             <img src="quiche-loco.jpg" class="card-img-top" alt="Quiche Loco">
             <div class="card-body">
-              <h5 class="card-title">Quiche Loco</h5>
-              <p class="card-text">Nosso prato exclusivo com receita secreta!</p>
+              <h5 class="card-title fw-semibold">Quiche Loco</h5>
+              <p class="card-text">Nosso prato exclusivo com receita secreta e apresentação única.</p>
+              <a href="#" class="btn btn-primary">Ver mais</a>
             </div>
           </div>
         </div>
-        <!-- + outros produtos -->
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="bg-light py-5">
+  <!-- CONTATO -->
+  <section id="contato" class="py-5 bg-light">
     <div class="container">
-      <h2 class="mb-4 text-center">Fale Conosco</h2>
-      <form>
+      <h2 class="section-title text-center mb-4">Fale Conosco</h2>
+      <form class="mx-auto" style="max-width: 600px;">
         <div class="mb-3">
           <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" required />
+          <input type="text" class="form-control rounded-pill" id="nome" required />
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" required />
+          <input type="email" class="form-control rounded-pill" id="email" required />
         </div>
         <div class="mb-3">
           <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+          <textarea class="form-control rounded-4" id="mensagem" rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary rounded-pill px-5">Enviar</button>
+        </div>
       </form>
     </div>
   </section>
 
-  <!-- Rodapé -->
-  <footer class="text-center text-white bg-primary py-4">
-    <div class="container">
-      <p class="mb-1">Unidades em São Paulo, Rio de Janeiro e Minas Gerais</p>
-      <p class="small">© 2025 Ripe Origins - Todos os direitos reservados.</p>
-    </div>
+  <!-- RODAPÉ -->
+  <footer class="text-white text-center py-4 bg-dark">
+    <p class="mb-1">Unidades em SP, RJ e MG</p>
+    <small>© 2025 Ripe Origins - Todos os direitos reservados.</small>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

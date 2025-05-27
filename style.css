@@ -1,37 +1,78 @@
 :root {
-    --main-blue: #007BFF;
-    --light-gray: #f8f9fa;
+    --cor-branco: #FFFFFF;
+    --cor-amarelo: #FFD552;
+    --cor-laranja: #FF992A;
+    --cor-verde-claro: #AAE26A;
+    --cor-verde-medio: #29AE6A;
+    --cor-verde-neon: #29E26A;
+    --cor-petroleo: #215663;
+    --cor-azul-escuro: #021F30;
   }
   
-  body {
-    scroll-behavior: smooth;
-    font-family: 'Segoe UI', sans-serif;
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #333;
   }
   
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0d6efd;
+  }
+  
+  /* Hero sofisticado */
   .hero {
-    background: url('hero-mexico.jpg') center center/cover no-repeat;
+    position: relative;
     height: 100vh;
+    background: url('hero-mexico.jpg') center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .hero h1 {
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  .hero .overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
   }
   
-  section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .hero h1, .hero p {
+    z-index: 2;
   }
   
-  .card img {
-    height: 250px;
-    object-fit: cover;
+  /* Cards modernos */
+  .card {
+    border-radius: 1.25rem;
+    transition: transform 0.3s ease;
   }
   
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  /* Botões elegantes */
+  .btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0b5ed7;
+  }
+  
+  /* Rodapé elegante */
   footer {
-    background-color: var(--main-blue);
+    background-color: #111;
   }
   
