@@ -1,0 +1,37 @@
+:root {
+    --main-blue: #007BFF;
+    --light-gray: #f8f9fa;
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .hero {
+    background: url('hero-mexico.jpg') center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .card img {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  footer {
+    background-color: var(--main-blue);
+  }
+  
