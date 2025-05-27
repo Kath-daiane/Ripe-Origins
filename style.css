@@ -1,78 +1,127 @@
+/* Palette: Ripe Origins - Atualizada */
 :root {
     --cor-branco: #FFFFFF;
-    --cor-amarelo: #FFD552;
-    --cor-laranja: #FF992A;
-    --cor-verde-claro: #AAE26A;
-    --cor-verde-medio: #29AE6A;
-    --cor-verde-neon: #29E26A;
-    --cor-petroleo: #215663;
-    --cor-azul-escuro: #021F30;
+    --cor-amarelo: #FFD700;
+    --cor-laranja: #FFA500;
+    --cor-verde-claro: #90EE90;
+    --cor-verde-medio: #32CD32;
+    --cor-verde-escuro: #00FF00;
+    --cor-azul-petroleo: #2F4F4F;
+    --cor-azul-escuro: #000080;
   }
   
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fff;
-    color: #333;
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-branco);
+    color: #2F4F4F;
   }
   
-  h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #0d6efd;
-  }
-  
-  /* Hero sofisticado */
-  .hero {
-    position: relative;
-    height: 100vh;
-    background: url('hero-mexico.jpg') center center/cover no-repeat;
+  header {
+    background-color: var(--cor-azul-petroleo);
+    color: var(--cor-branco);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
   }
   
-  .hero .overlay {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4);
-    z-index: 1;
+  header img.logo {
+    height: 50px;
   }
   
-  .hero h1, .hero p {
-    z-index: 2;
+  nav a {
+    color: var(--cor-amarelo);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
   }
   
-  /* Cards modernos */
+  nav a:hover {
+    color: var(--cor-laranja);
+  }
+  
+  .hero {
+    background-color: var(--cor-azul-petroleo);
+    color: var(--cor-branco);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero button {
+    background-color: var(--cor-laranja);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    color: var(--cor-branco);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero button:hover {
+    background-color: var(--cor-laranja);
+  }
+  
+  section {
+    padding: 4rem 2rem;
+  }
+  
+  footer {
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
   .card {
-    border-radius: 1.25rem;
-    transition: transform 0.3s ease;
+    background-color: var(--cor-verde-claro);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
   }
   
   .card:hover {
     transform: translateY(-5px);
   }
-  
-  .card-title {
-    font-size: 1.5rem;
-  }
-  
-  /* Botões elegantes */
-  .btn-primary {
-    background-color: #0d6efd;
+
+  .button-primary {
+    background-color:  var(--cor-laranja);
+    padding: 0.75rem 1.5rem;
     border: none;
-    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    font-weight: bold;
+    color: var(--cor-branco);
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
   
-  .btn-primary:hover {
-    background-color: #0b5ed7;
+  .button-secondary {
+    background-color: var(--cor-laranja);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
   
-  /* Rodapé elegante */
-  footer {
-    background-color: #111;
+  .button-secondary:hover {
+    background-color: var(--cor-verde-escuro);
   }
   
