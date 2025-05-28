@@ -1,127 +1,215 @@
-/* Palette: Ripe Origins - Atualizada */
+/* Paleta: Ripe Origins */
 :root {
-    --cor-branco: #FFFFFF;
-    --cor-amarelo: #FFD700;
-    --cor-laranja: #FFA500;
-    --cor-verde-claro: #90EE90;
-    --cor-verde-medio: #32CD32;
-    --cor-verde-escuro: #00FF00;
-    --cor-azul-petroleo: #2F4F4F;
-    --cor-azul-escuro: #000080;
-  }
-  
-  body {
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--cor-branco);
-    color: #2F4F4F;
-  }
-  
-  header {
-    background-color: var(--cor-azul-petroleo);
-    color: var(--cor-branco);
-    padding: 1.5rem 2rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header img.logo {
-    height: 50px;
-  }
-  
-  nav a {
-    color: var(--cor-amarelo);
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: var(--cor-laranja);
-  }
-  
-  .hero {
-    background-color: var(--cor-azul-petroleo);
-    color: var(--cor-branco);
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .hero button {
-    background-color: var(--cor-laranja);
-    border: none;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    color: var(--cor-branco);
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .hero button:hover {
-    background-color: var(--cor-laranja);
-  }
-  
-  section {
-    padding: 4rem 2rem;
-  }
-  
-  footer {
-    background-color: var(--cor-laranja);
-    color: var(--cor-branco);
-    padding: 2rem;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  
-  .card {
-    background-color: var(--cor-verde-claro);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
+  --cor-branco: #FFFFFF;
+  --cor-amarelo: #FFD700;
+  --cor-laranja: #FFA500;
+  --cor-verde-claro: #90EE90;
+  --cor-verde-medio: #32CD32;
+  --cor-verde-escuro: #00FF00;
+  --cor-azul-petroleo: #2F4F4F;
+  --cor-azul-escuro: #000080;
+}
 
-  .button-primary {
-    background-color:  var(--cor-laranja);
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    color: var(--cor-branco);
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .button-secondary {
-    background-color: var(--cor-laranja);
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .button-secondary:hover {
-    background-color: var(--cor-verde-escuro);
-  }
-  
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-branco);
+  color: #2F4F4F;
+}
+
+header {
+  background-color: var(--cor-azul-petroleo);
+  color: var(--cor-branco);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img.logo {
+  height: 50px;
+}
+
+nav a {
+  color: var(--cor-amarelo);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--cor-laranja);
+}
+
+.hero {
+  background-color: var(--cor-azul-petroleo);
+  color: var(--cor-branco);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: var(--cor-laranja);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: var(--cor-branco);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: var(--cor-laranja);
+}
+
+/* Espaçamento geral */
+section {
+  padding: 2rem 2rem;
+}
+
+/* Espaçamento geral das seções */
+.quem-somos section {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+/* Títulos principais e secundários*/
+.quem-somos h1,
+.quem-somos h2,
+h1, h2, h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: var(--cor-laranja);
+}
+
+.quem-somos p,
+p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cartões dos fundadores */
+.fundador-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Fundador: ajuste de imagem */
+.fundador-card img {
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+/* Fundador: título */
+.fundador-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--cor-laranja);
+}
+
+/* Fundador: descrição */
+.fundador-card p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Seção de endereços */
+.enderecos {
+  line-height: 1.8;
+}
+
+.enderecos h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.enderecos h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--cor-laranja);
+}
+
+.enderecos ul {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  background-color: var(--cor-laranja);
+  color: var(--cor-branco);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.card {
+  background-color: var(--cor-verde-claro);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.button-primary {
+  background-color:  var(--cor-laranja);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  color: var(--cor-branco);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-secondary {
+  background-color: var(--cor-laranja);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-secondary:hover {
+  background-color: var(--cor-verde-escuro);
+}
