@@ -32,6 +32,17 @@ header img.logo {
   height: 50px;
 }
 
+header nav a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+header nav a:hover {
+  color: var(--cor-laranja);
+  text-decoration: underline;
+}
+
 nav a {
   color: var(--cor-amarelo);
   margin: 0 1rem;
